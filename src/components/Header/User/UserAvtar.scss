@@ -1,0 +1,18 @@
+@import '../../../Colors.scss';
+
+.UserAvtar{
+    position: relative;
+    width: 41px;
+    height: 41px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 41px;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 0;
+    background-size: cover;
+    background-color: rgba($color: $grey, $alpha: 0.4);
+    &:hover{
+        padding: 0;
+    }
+}

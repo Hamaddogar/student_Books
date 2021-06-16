@@ -1,0 +1,75 @@
+@import '../../Colors.scss';
+.BookPageRight{
+    min-width: 30%;
+    .userDetails{
+        margin: 16px 0;
+        div{
+            margin-left: 8px;
+            b{
+                display: block;
+            }
+        }
+    }
+    .posted-at{
+        font-size: 13px;
+    }
+    .link{
+        color: $primary;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .fa-chevron-right{
+        margin-left: auto;
+        font-size: 16px;
+    }
+    .phoneNumber{
+        position: relative;
+        min-height: 20px;
+        text-align: center;
+    }
+    .alert{
+        color: $danger;
+        margin-top: 16px;
+    }
+    .phoneNumber{
+        i{
+            margin-right: 5px;
+        }
+        .fa-envelope, .fa-address-card{
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        b{
+            display: block;
+        }
+        .spinnerContainer{
+            position: absolute;
+        }
+        .lds-ring{
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            div {
+                width: 16px;
+                height: 16px;
+                margin: 0;
+            }
+        }
+    }
+    .phNum{
+        margin: 0 4px;   
+    }
+    .editbook, .deletebook{
+        text-align: center;
+        color: $primary;
+        font-weight: bold;
+        i{
+            color: #000;
+            margin-right: 8px;
+        }
+        span{
+            cursor: pointer;
+        }
+    }
+}

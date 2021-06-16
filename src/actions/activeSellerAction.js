@@ -1,0 +1,1 @@
+export const activeSellerAction = seller => ({ type: 'active_seller', payload: seller });

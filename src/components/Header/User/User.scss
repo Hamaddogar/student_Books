@@ -1,0 +1,9 @@
+.UserContainer{
+    position: relative;
+    margin-left: 16px;
+    &:hover .DropMenu{
+        opacity: 1;
+        visibility: visible;
+        transition: linear 0.2s opacity;
+    }
+}

@@ -1,0 +1,22 @@
+.VerfyEmail{
+    padding: 4px;
+    background: rgba(117, 117, 117, 0.2);
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    min-height: 37px;
+    line-height: 30px;
+    .btn{
+        padding: 6px 10px;
+        margin-left: 6px;
+        font-size: 12px;
+        text-transform: none;
+    }
+    @media (max-width: 760px) {
+        line-height: normal;
+        span{
+            display: block;
+            min-height: 29px;
+        }
+    }
+}

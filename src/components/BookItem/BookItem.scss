@@ -1,0 +1,61 @@
+@import '../../Colors.scss';
+
+.BookItem{
+    border: 1px solid rgba($color: $grey, $alpha: 0.4);
+    width: calc(20% - 16px);
+    background: #fff !important;
+    .title{
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+    }
+    &:hover{
+        border-color: $primary;
+    }
+    .date{
+        display: none;
+    }
+    .bookImage{
+        padding-top: 100%;
+    }
+    h3{
+        margin: 12px 0 0 0;
+    }
+    @media (max-width: 1020px) {
+        width: calc(25% - 16px);
+    }
+    @media (max-width: 600px) {
+        width: calc(100% - 16px);
+        display: flex;
+        border: 1px solid rgba($color: $grey, $alpha: 0.4);
+        .bookImage{
+           padding: 0;
+           min-width: 65px;
+           height: 65px;
+           margin-right: 16px;
+        }
+        h3{
+            margin: 0 0 6px 0;
+        }
+        .bookDetails{
+            overflow: hidden;
+            flex-grow: 1;
+        }
+        .date{
+            display: block;
+            font-size: 13px;
+            color: rgba(23, 23, 23, 0.7);
+        }
+    }
+    .__category{
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(23, 23, 23, 0.7);
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+        @media (max-width: 350px) {
+            max-width: 90px;
+        }
+    }
+}

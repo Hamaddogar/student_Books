@@ -1,0 +1,71 @@
+@import "../Colors.scss";
+
+.Sign-In {
+  border-radius: 3px;
+  padding: 20px;
+  width: 340px;
+  @media (max-width: 390px) {
+    width: calc(100% - 40px);
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  h3 {
+    margin: 16px 0 -4px;
+    color: #000;
+  }
+  button {
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    font-weight: 500;
+    margin: 8px 0;
+  }
+  .alert {
+    color: $danger;
+    margin: -8px 0 8px 0;
+  }
+  .fa-times {
+    margin-left: auto;
+    display: block;
+    width: 12px;
+  }
+  .signup {
+    color: $primary;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    margin-top: 4px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .forgotPassword {
+    margin: -8px 0 8px 0;
+  }
+  .btn {
+    text-align: center;
+    color: #fff;
+    &.facebook {
+      background: #4267b2;
+      margin-top: 8px;
+      border-color: #4267b2;
+    }
+    &.google {
+      background: #db4437;
+      border-color: #db4437;
+    }
+  }
+  h1{
+    text-align: center;
+  }
+}
+.forgot-password__message{
+  text-align: center;
+  .btn{
+    // display: inline-block;
+    margin-top: 16px;
+  }
+}

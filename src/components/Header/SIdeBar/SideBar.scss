@@ -1,0 +1,50 @@
+@import '../../../Colors.scss';
+
+.SideBar{
+    position: fixed;
+    width: 270px;
+    z-index: 15;
+    height: 100%;
+    top: 0;
+    overflow-y: auto;
+    transition: ease-in 0.2s left;
+    left: -270px;
+    &.open{
+        transition: ease-out 0.3s left;
+        left: 0;
+    }
+        a, .link{
+            display: flex;
+            padding: 12px;
+            align-items: center;
+            i{
+                min-width: 46px;
+                padding-right: 11px;
+                text-align: center;
+            }
+        }
+        .UserBasicDetails{
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+            padding: 5.5px;
+            margin-bottom: 12px;
+        }
+    .subtitle{
+        margin: 8px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #757575;
+    }
+    .fg{
+        overflow-y: auto;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+        color: $grey;
+        padding: 5.5px 8px;
+        margin-bottom: 12px;
+        img{
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import '../../Colors.scss';
+.BookPageSlider{
+    .big-book-image-container{
+        position: relative;
+        margin-bottom: 16px;
+        .fas{
+            font-size: 36px;
+            cursor: pointer;
+            z-index: 1;
+            color: rgba($color: $grey, $alpha: 0.5);
+            &:hover{
+                color: rgba($color: $grey, $alpha: 0.8);
+            }
+        }
+    }
+    .big-book-image{
+        position: absolute;
+        width: calc(100% - 32px);
+        height: calc(100% - 32px);
+        left: 16px;
+        top: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: linear 0.3s all;
+        z-index: -1;
+        &.active{
+            z-index: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.BookPageSlider{
+    height: calc(100vh - 96px);
+    .images-container{
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    .book-image{
+        width: 80px;
+        margin: 0 8px;
+        cursor: pointer;
+    }
+    .book-image:first-child{
+        margin-left: 0;
+    }
+    .book-image:last-child{
+        margin-right: 0;
+    }
+    .book-inner-image{
+        padding-top: 100%;
+        z-index: 1;
+        position: relative;
+    }
+    @media (max-width: 1020px) {
+        height: auto;
+        .big-book-image-container{
+            height: 250px;
+        }
+    }
+    .book-inner-image{
+        background: rgba($color: #fff, $alpha: 0.6);
+        &.active{
+            background: transparent;
+        }
+    }
+    @media (max-width: 600px) {
+        .book-image{
+            min-width: calc(25% - 12px);
+        }
+    }
+}

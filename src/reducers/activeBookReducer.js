@@ -1,0 +1,1 @@
+export const activeBookReducer = (state = {}, action) => action.type === "active_book" ? action.payload : state;

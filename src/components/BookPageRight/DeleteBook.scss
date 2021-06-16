@@ -1,0 +1,56 @@
+@import '../../Colors.scss';
+
+.deleteThisBook{
+    .delete{
+        margin-right: 12px;
+        background-color: $danger;
+        color: #fff;
+        border-color: $danger;
+    }
+    .btn{
+        margin-top: 16px;
+        padding: 6px;
+    }
+    .__footer{
+        font-weight: bold;
+        justify-content: flex-end;
+        span{
+            cursor: pointer;
+            display: inline-block;
+            padding: 6px 16px;
+            margin: 12px -8px -8px 6px;
+            border-radius: 2px;
+            color: $danger;
+            &:hover{
+                background: rgba($color: $grey, $alpha: 0.1);
+            }
+            &:first-child{
+                color: $primary;
+            }
+        }
+    }
+    .Model{
+        width: 280px;
+        margin: 0;
+        padding: 16px;
+    }
+    .primary{
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .deletebook{
+        color: $danger;
+    }
+    .fa-times{
+        float: right;
+    }
+    .closeModel{
+        text-align: right;
+    }
+    h3{
+        margin: 0 0 24px 0;
+    }
+    .err{
+        color: $danger;
+    }
+}

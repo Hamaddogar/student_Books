@@ -1,0 +1,56 @@
+@import '../Colors.scss';
+.InputSelect{
+    background: rgba($color: $grey, $alpha: 0.1);
+    margin: 0 16px 0 0; 
+    position: relative;
+    input{
+        padding: 12px 36px 12px 12px;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        background: transparent;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            font-size: 13px;
+            font-weight: 300;
+            font-family: 'Open Sans',
+        }
+        &:focus{
+            background: transparent;
+        }
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+    .fas{
+        background: transparent;
+        color: $primary;
+        position: absolute;
+        right: 12px;
+        top: 16px;
+    }
+    .options{
+        top: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 8px;
+        .scrollbar{
+            scroll-behavior: smooth;
+            max-height: 234px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: rgba($color: $grey, $alpha: 0.7);
+            }
+        }
+    }
+    .option{
+        padding: 10px;
+        &.active{
+            background: rgba($color: $grey, $alpha: 0.1)
+        }
+    }
+}

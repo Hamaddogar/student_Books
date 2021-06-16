@@ -1,0 +1,36 @@
+.ProfilePage {
+  .border {
+    padding: 16px;
+    background: #fff;
+    margin: 16px;
+  }
+  .bookscontainer {
+    margin: 0 0 auto 16px;
+    @media (max-width: 1020px) {
+        margin: 0;
+    }
+  }
+  .flex.wrap {
+    padding: 8px;
+  }
+  @media (max-width: 1500px) and (min-width: 1150px) {
+    .BookItem {
+      width: calc(25% - 16px);
+    }
+  }
+  @media (max-width: 1149px) and (min-width: 1019px) {
+    .BookItem {
+      width: calc(33.33% - 16px);
+    }
+  }
+  @media (max-width: 760px) {
+      margin: 0;
+      h3{
+        margin: 0;
+        padding-bottom: 0;
+      }
+      .border{
+          margin-bottom: 0;
+      }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../Colors.scss";
+
+.EditContact {
+  margin-top: 6px !important;
+  i{
+    color: $grey;
+  }
+  .addcontact{
+    color: $primary;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.update-contact-container {
+  margin: 32px 0 0;
+  .btn{
+    padding: 6px;
+    &:first-child{
+      margin-right: 1px;
+    }
+  }
+  .input-container {
+    margin: 0 0 1px !important;
+    input {
+      border-left: none !important;
+      border-right: none !important;
+      border-radius: 0;
+      border-top: none !important;
+      padding: 8px 0 5px;
+      &:focus+span, &.filled+span{
+          top: -16px !important;
+      }
+    }
+  }
+  span {
+    left: 0;
+    top: 8px;
+  }
+}

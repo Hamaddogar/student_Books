@@ -1,0 +1,27 @@
+.navbar{
+    nav{
+        position: relative;
+        padding: 8px 16px;
+        height: 64px;
+    }
+    .container>i{
+        margin: auto 16px auto 0;
+        vertical-align: center;
+        font-size: 18px;
+    }
+    @media (max-width: 760px) {
+        nav{
+            padding: 2px 16px;
+            height: 52px;
+        }
+        .container>i{
+            margin: 0;
+        }
+        a{
+            margin-top: auto;
+            flex-grow: 100;
+            text-align: center;
+            margin-right: 15.75px;
+        }
+    }
+}

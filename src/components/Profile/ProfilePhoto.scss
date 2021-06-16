@@ -1,0 +1,39 @@
+@import '../../Colors.scss';
+
+.profilePic {
+	width: 150px;
+	margin: 16px auto;
+	border-radius: 150px;
+	.backgroundImage {
+		border-radius: 120px;
+		background-color: $primary;
+		background-color: rgba($color: $grey, $alpha: 0.4);
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			label {
+				opacity: 1;
+			}
+		}
+	}
+	label {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		height: 100%;
+		left: 0;
+		background: rgba($color: #000, $alpha: 0.6);
+		text-align: center;
+		cursor: pointer;
+		opacity: 0;
+	}
+	input {
+		width: 100%;
+		visibility: hidden;
+	}
+	.fa-camera {
+		color: #fff;
+		font-size: 36px;
+		line-height: 148px;
+	}
+}

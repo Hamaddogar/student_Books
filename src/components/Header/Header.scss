@@ -1,0 +1,86 @@
+@import '../../Colors.scss';
+header{
+    position: sticky;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    top: 0;
+    .navbar{
+        padding: 8px 16px;
+    }
+    .fa-caret-down{
+        margin-left: 3px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li>a,  li>.link{
+        padding: 12px;
+        border-radius: 3px;
+        position: relative;
+    }
+    a:hover, .link:hover{
+        background: rgba($color: $grey, $alpha: 0.1)
+    }
+    .dropDownCon{
+        cursor: pointer;
+        position: relative;
+        &:hover .dropDowntitle{
+            color: $primary;
+            background: rgba($color: $grey, $alpha: 0.1);
+        }
+        .dropDowntitle{
+            padding: 12px;
+        }
+    }
+    .logo{
+        img{
+            height: 48px;
+            margin: auto;
+            padding-left: 15.75px;
+        }
+        h3{
+            margin: 0 0 0 16px;
+            color: $grey;
+        }
+    }
+    .categories{
+        margin: 0 16px;
+        .fa-th-large{
+            margin-right: 8px;
+        }
+        .DropMenu{
+            left: 0;
+            top: 43px;
+        }
+        .caret-up{
+            margin-left: 12px;
+        }
+        &:hover .DropMenu{
+            transition: linear 0.2s all;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    @media (max-width: 1020px) {
+        .navbar{
+            padding: 2px 16px;
+            overflow: hidden;
+        }
+        .fas{
+            font-size: 18px;
+            text-align: left;
+        }
+        .fa-bars{
+            width: 43.5px;
+        }
+        .smallNav{
+            width: 100%;
+        }
+        .categories{
+            display: none;
+        }
+    }
+}
